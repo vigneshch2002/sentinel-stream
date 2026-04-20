@@ -1,0 +1,13 @@
+[project]
+name = "sentinel-stream"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+	"apache-flink",
+	"kafka-python-ng",
+]
+
+[tool.uv.extra-build-dependencies]
+apache-beam = ["setuptools<71"]
